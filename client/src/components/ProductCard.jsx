@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProductCard() {
   return (
-    <div>ProductCard</div>
+    <div>This is a product card jsx file</div>
   )
 }
 
