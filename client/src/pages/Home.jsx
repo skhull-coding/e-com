@@ -1,14 +1,13 @@
-import Header from "../components/Header"
-import NavBar from "../components/NavBar"
+import Header from "../components/Header";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
-    <section className="min-h-screen w-full relative">
-    <Header />
-    <NavBar />
+    <>
+      <Header />
+      <NavBar />
+    </>
+  );
+};
 
-    </section>
-  )
-}
-
-export default Home
+export default Home;
