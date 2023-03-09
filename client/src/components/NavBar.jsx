@@ -1,17 +1,28 @@
 import React from "react";
 import NavItem from "./NavItem";
+import home from "../icons/home.png";
+import contact from "../icons/contact.png";
+import product from "../icons/product.png";
+import about from "../icons/about.png";
+import sell from "../icons/sell.png";
+import cart from "../icons/cart.png";
+import profile from "../icons/profile.png";
 
 const NavBar = () => {
   return (
-    <div className="fixed top-[calc(50%-1.5rem)] left-3 w-12 rounded-full h-12 flex items-center justify-center bg-teal-300/20 border border-black/20">
-      <div className="material-symbols-outlined">home</div>
-      <nav className="absolute left-0 top-0">
-        <NavItem name="home" top="-top-14" />
-        <NavItem name="home" top="-top-7" left="left-12" />
-        <NavItem name="home" top="top-7" left="left-12" />
-        <NavItem name="home" top="top-14" />
-      </nav>
-    </div>
+    <nav className="bg-[#172F43] w-full h-full flex flex-col justify-between items-center py-10">
+      <div id="upperSection" className=" flex flex-col items-center gap-[36px]">
+        <NavItem type={home} />
+        <NavItem type={product} />
+        <NavItem type={sell} />
+        <NavItem type={about} />
+        <NavItem type={contact} />
+      </div>
+      <div id="downSection" className=" flex flex-col items-center gap-[36px]">
+        <NavItem type={cart} />
+        <NavItem type={profile} />
+      </div>
+    </nav>
   );
 };
 

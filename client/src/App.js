@@ -7,12 +7,21 @@ import Announcement from "./components/Announcement";
 function App() {
   return (
     <Router>
-      <Announcement body="Website on creation mode" />
-      <Header />
-      <section className="min-h-screen w-full relative">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+      <section className="h-screen max-h-screen flex flex-col">
+        <Announcement
+          body="Website on creation mode"
+          link="product"
+          linkText="Google.com"
+        />
+        <Header />
+        <section className="flex h-full justify-between">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+          <div id="navSpace" className="h-full w-[100px] relative">
+            <NavBar />
+          </div>
+        </section>
       </section>
     </Router>
   );
