@@ -8,6 +8,26 @@
     }
 
     .navItem:hover .floatingText {
-        @apply  w-[100%] -translate-x-full px-16 rounded-l-lg
+        @apply w-[100%] -translate-x-full px-16 rounded-l-lg
+    }
+
+    #home::before {
+        background: url("./bgs/HomeBG.png") no-repeat center center/cover;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-2;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-slate-400;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-slate-900
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-slate-800
     }
 }

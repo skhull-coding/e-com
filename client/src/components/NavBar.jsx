@@ -10,15 +10,15 @@ import profile from "../icons/profile.png";
 
 const NavBar = () => {
   return (
-    <nav className="bg-[#172F43] w-full h-full flex flex-col justify-between items-center py-1">
-      <div id="upperSection" className=" flex flex-col items-center">
-        <NavItem type={home} altText="home" />
-        <NavItem type={product} altText="product" />
-        <NavItem type={sell} altText="sell" />
+    <nav className="bg-[#172F43] w-full h-full flex md:flex-col flex-row justify-between items-center py-1 z-50">
+      <div id="upperSection" className=" flex md:flex-col flex-row items-center">
+        <NavItem type={home} altText="home" link="home" />
+        <NavItem type={product} altText="product" link="product" />
+        <NavItem type={sell} altText="sell" link="sell" />
         <NavItem type={about} altText="about" />
         <NavItem type={contact} altText="contact" />
       </div>
-      <div id="downSection" className=" flex flex-col items-center">
+      <div id="downSection" className=" flex md:flex-col flex-row items-center">
         <NavItem type={cart} altText="cart" />
         <NavItem type={profile} altText="profile" />
       </div>

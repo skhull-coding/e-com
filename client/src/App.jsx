@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
+import Product from "./pages/Product";
+import Arrow from "./components/Arrows";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Announcement from "./components/Announcement";
@@ -14,11 +16,14 @@ function App() {
           linkText="Google.com"
         />
         <Header />
-        <section className="flex h-full justify-between md:flex-row flex-col">
+        <Arrow />
+        <section className="flex w-full h-full overflow-hidden justify-between">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/product" element={<Product />} />
           </Routes>
-          <div id="navSpace" className="md:h-full 2xl:w-[100px] md:w-[70px] w-full h-[70px] relative">
+          <div id="navSpace" className="h-full 2xl:w-[100px] 2xl:w-[100px] w-[70px] w-[70px] relative">
             <NavBar />
           </div>
         </section>
