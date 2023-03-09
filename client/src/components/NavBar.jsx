@@ -10,17 +10,17 @@ import profile from "../icons/profile.png";
 
 const NavBar = () => {
   return (
-    <nav className="bg-[#172F43] w-full h-full flex flex-col justify-between items-center py-10">
+    <nav className="bg-[#172F43] w-full h-full flex flex-col justify-between items-center py-10 px-[25px]">
       <div id="upperSection" className=" flex flex-col items-center gap-[36px]">
-        <NavItem type={home} />
-        <NavItem type={product} />
-        <NavItem type={sell} />
-        <NavItem type={about} />
-        <NavItem type={contact} />
+        <NavItem type={home} altText="home" />
+        <NavItem type={product} altText="product" />
+        <NavItem type={sell} altText="sell" />
+        <NavItem type={about} altText="about" />
+        <NavItem type={contact} altText="contact" />
       </div>
       <div id="downSection" className=" flex flex-col items-center gap-[36px]">
-        <NavItem type={cart} />
-        <NavItem type={profile} />
+        <NavItem type={cart} altText="cart" />
+        <NavItem type={profile} altText="profile" />
       </div>
     </nav>
   );
