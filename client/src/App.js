@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-          <div id="navSpace" className="h-full w-[100px] relative">
+          <div id="navSpace" className="h-full 2xl:w-[100px] w-[70px] relative">
             <NavBar />
           </div>
         </section>

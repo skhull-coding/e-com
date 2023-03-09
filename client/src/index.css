@@ -6,4 +6,8 @@
     * {
         font-family: 'Urbanist', sans-serif;
     }
+
+    .navItem:hover .floatingText {
+        @apply  w-[100%] -left-full  px-16 rounded-lg
+    }
 }
