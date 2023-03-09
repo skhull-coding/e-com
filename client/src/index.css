@@ -8,6 +8,6 @@
     }
 
     .navItem:hover .floatingText {
-        @apply  w-[100%] -left-full  px-16 rounded-lg
+        @apply  w-[100%] -translate-x-full px-16 rounded-l-lg
     }
 }
