@@ -9,7 +9,7 @@ const Home = () => {
     >
       <section className="min-h-full w-full flex justify-between flex-col items-start">
         <div className="my-20 md:mx-16 mx-auto w-fit">
-          <h1 className="text-[10vw] text-[#172F43] font-extrabold tracking-widest ">
+          <h1 className="text-[min(10vw,128px)] text-[#172F43] font-extrabold tracking-widest ">
             Buy.Sell.Earn.
           </h1>
           <p className="md:text-2xl text-[3vw] w-full text-right px-4">
