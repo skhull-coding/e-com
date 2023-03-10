@@ -1,11 +1,12 @@
 import sell from "../icons/sell.png";
 import product from "../icons/product.png";
+import CategoryBox from "../components/CategoryBox";
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="w-full h-full flex justify-between flex-col items-start p-4 before:fixed relative before:w-full before:h-full before:-z-10 before:top-0 before:left-0 overflow-y-auto overflow-x-hidden"
+      className="w-full min-h-full gap-4 flex justify-between flex-col items-start p-4 before:fixed relative before:w-full before:h-full before:-z-10 before:top-0 before:left-0 overflow-y-auto overflow-x-hidden"
     >
       <section className="min-h-full w-full flex justify-between flex-col items-start">
         <div className="my-20 md:mx-16 mx-auto w-fit">
@@ -29,6 +30,17 @@ const Home = () => {
             <img src={product} alt="sell" className="md:w-[40px] w-[8vw]" />
             <span className="mx-auto">View All Products</span>
           </button>
+        </div>
+      </section>
+      <section id="categories" className="space-y-4 w-full">
+        <h2 className="text-center text-[3vw]">Choose from Categories</h2>
+        <div id="categories-container" className="container flex flex-wrap justify-start items-start content-start">
+          <CategoryBox />
+          <CategoryBox />
+          <CategoryBox />
+          <CategoryBox />
+          <CategoryBox />
+          <CategoryBox />
         </div>
       </section>
     </section>
