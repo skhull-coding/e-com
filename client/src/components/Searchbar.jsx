@@ -6,7 +6,7 @@ const Searchbar = () => {
   const [searchValue, setSearchValue] = useState("");
   return (
     <form
-      className="w-full p-0.5 flex 2xl:max-w-6xl max-w-2xl  mr-8"
+      className="w-full p-0.5 flex 2xl:max-w-6xl max-w-2xl md:mr-8"
       onClick={(e) => {
         e.preventDefault();
         console.log("hello")

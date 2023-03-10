@@ -10,7 +10,7 @@ import profile from "../icons/profile.png";
 
 const NavBar = () => {
   return (
-    <nav className="bg-[#172F43] w-full h-full flex md:flex-col flex-row justify-between items-center py-1 z-50">
+    <nav id="navBar" className="bg-[#172F43] w-full h-full flex md:flex-col flex-row justify-between items-center py-1 z-50 ">
       <div id="upperSection" className=" flex md:flex-col flex-row items-center">
         <NavItem type={home} altText="home" link="home" />
         <NavItem type={product} altText="product" link="product" />

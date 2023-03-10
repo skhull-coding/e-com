@@ -17,7 +17,7 @@ function App() {
         />
         <Header />
         <Arrow />
-        <section className="flex w-full h-full overflow-hidden justify-between">
+        <section className="flex w-full h-full overflow-hidden justify-between flex-col md:flex-row">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
