@@ -3,35 +3,20 @@
 @tailwind utilities;
 
 @layer components {
-    * {
-        font-family: 'Urbanist', sans-serif;
-    }
+  #body::before {
+    background: url("./bgs/bg1.svg");
+  }
 
-    .navItem:hover .floatingText {
-        @apply w-[100%] md:-translate-x-full  px-16 rounded-l-lg
-    }
+  body {
+    @apply bg-[#012233] lg:cursor-none overflow-hidden;
+  }
 
-    #home::before {
-        background: url("./bgs/HomeBG.png") no-repeat center center/cover;
-    }
+  body:hover #trailer,
+  body:hover #trailer-i {
+    opacity: 1;
+  }
 
-    ::-webkit-scrollbar {
-        @apply w-2;
-    }
-
-    #navBar::-webkit-scrollbar {
-        @apply md:w-0 w-1;
-    }
-
-    ::-webkit-scrollbar-track {
-        @apply bg-slate-400;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        @apply bg-slate-900
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        @apply bg-slate-800
-    }
+  #navbar {
+    @apply overflow-x-visible !important;
+  }
 }

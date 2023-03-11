@@ -6,11 +6,11 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full min-h-full gap-4 flex justify-between flex-col items-start p-4 before:fixed relative before:w-full before:h-full before:-z-10 before:top-0 before:left-0 overflow-y-auto overflow-x-hidden"
+      className="gap-4 flex justify-between flex-col items-start p-4"
     >
-      <section className="min-h-full w-full flex justify-between flex-col items-start">
+      <section className="flex justify-between flex-col items-start">
         <div className="my-20 md:mx-16 mx-auto w-fit">
-          <h1 className="text-[min(10vw,128px)] text-[#172F43] font-extrabold tracking-widest ">
+          <h1 className="text-[min(10vw,128px)] text-white font-extrabold tracking-widest ">
             Buy.Sell.Earn.
           </h1>
           <p className="md:text-2xl text-[3vw] w-full text-right px-4">
@@ -33,12 +33,12 @@ const Home = () => {
         </div>
       </section>
       <section id="categories" className="space-y-4 w-full">
-        <h2 className="text-center text-[3vw]">Choose from Categories</h2>
-        <div id="categories-container" className="container flex flex-wrap justify-start items-start content-start">
-          <CategoryBox />
-          <CategoryBox />
-          <CategoryBox />
-          <CategoryBox />
+        <h2 className="text-center text-[3vw] drop-shadow-sm shadow-white text-white">Choose from Categories</h2>
+        <div id="categories-container" className="container mx-auto flex flex-wrap justify-start items-start content-start gap-5">
+          <CategoryBox categoryName="Electronics" />
+          <CategoryBox categoryName="Fevicols" />
+          <CategoryBox categoryName="Papers" />
+          <CategoryBox categoryName="Hahaha" />
           <CategoryBox />
           <CategoryBox />
         </div>

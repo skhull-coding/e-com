@@ -1,34 +1,22 @@
-import Header from "./components/Header";
-import NavBar from "./components/NavBar";
-import Product from "./pages/Product";
-import Arrow from "./components/Arrows";
-import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Announcement from "./components/Announcement";
+import Header from "./components/Header";
+import Cursor from "./components/Cursor";
+import Home from "./pages/Home";
+import Product from "./pages/Product";
 
 function App() {
   return (
-    <Router>
-      <section className="h-screen max-h-screen flex flex-col">
-        <Announcement
-          body="Website on creation mode"
-          link="product"
-          linkText="Google.com"
-        />
+    <section id="body" className="overflow-auto h-screen w-full before:fixed before:w-screen before:min-h-screen before:top-0 before:left-0 before:bg-center before:bg-no-repeat before:bg-cover before:-z-50 before:blur-md">
+      <Router>
+        <Cursor />
         <Header />
-        <Arrow />
-        <section className="flex w-full h-full overflow-hidden justify-between flex-col md:flex-row">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/product" element={<Product />} />
-          </Routes>
-          <div id="navSpace" className="md:h-full  2xl:w-[100px] md:w-[70px] h-[70px] relative">
-            <NavBar />
-          </div>
-        </section>
-      </section>
-    </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+        </Routes>
+      </Router>
+    </section>
   );
 }
 

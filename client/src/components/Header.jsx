@@ -1,11 +1,16 @@
-import logoHeader from "../icons/logo1.png"
-import Searchbar from "../components/Searchbar"
+import NavMenu from "./NavMenu";
 
 const Header = () => {
   return (
-    <header className="2xl:h-36 h-24 bg-[#172F43] flex items-center px-4 justify-between">
-      <img src={logoHeader} alt="Webstore 2.0" className="md:h-[90%] h-[10vmin]" />
-      <Searchbar />
+    <header
+      id="main-header"
+      className= "flex items-center py-3 px-6 sticky"
+    >
+      <div id="logo" className="mx-auto font-medium select-none">
+        <span className="text-3xl text-white">Webstore</span>
+        <span className="text-red-400 text-base align-top">2.0</span>
+      </div>
+      <NavMenu />
     </header>
   );
 };
