@@ -50,7 +50,7 @@ const Menu = (props) => {
     <div
       ref={props.hamburgerMenu}
       id="menu"
-      className="w-10 h-5 flex items-center justify-between flex-col"
+      className="w-10 h-5 flex items-center justify-between flex-col cursor-pointer"
       onClick={props.handleClickOnMenu}
     >
       <div className="menuLine bg-pink-400 w-full h-0.5 rounded-full pointer-events-none select-none transition-transform"></div>

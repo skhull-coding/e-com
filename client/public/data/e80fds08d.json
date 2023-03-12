@@ -7,5 +7,7 @@
     "discount": 50,
     "discountType": "deal of the day",
     "imageDir": "/images/",
-    "productID": "e80fds08d"
+    "productID": "e80fds08d",
+    "about":"It is somewhat broken but can be goat to a good poece",
+    "tags": ["table", "lightweight", "plywood"]
 }

@@ -15,7 +15,7 @@ const ProductCard = (props) => {
       </figure>
       <Link
         to={`/product?id=${props.url}&name=${props.name
-          .replace(/\s+/g, "+")
+          .replace(/\s+/g, "_")
           .toLowerCase()}`}
         className="text-2xl tracking-wide font-medium px-3 overflow-x-auto"
       >
