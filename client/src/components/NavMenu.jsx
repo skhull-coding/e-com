@@ -23,23 +23,17 @@ const NavMenu = () => {
 
   return (
     <div className="relative">
-      <div
-        ref={hamburgerMenu}
-        id="menu"
-        className="w-10 h-5 flex items-center justify-between flex-col"
-        onClick={handleClickOnMenu}
-      >
-        <div className="menuLine bg-pink-400 w-full h-0.5 rounded-full pointer-events-none select-none transition-transform"></div>
-        <div className="menuLine bg-slate-50 w-full h-0.5 rounded-full pointer-events-none select-none transition-transform"></div>
-        <div className="menuLine bg-slate-50 w-full h-0.5 rounded-full pointer-events-none select-none transition-transform"></div>
-      </div>
+      <Menu
+        hamburgerMenu={hamburgerMenu}
+        handleClickOnMenu={handleClickOnMenu}
+      />
       <nav
         id="navbar"
         ref={Navbar}
         className="absolute top-[calc(100%+2rem)] gap-2 h-0 overflow-hidden text-slate-900 transition-all flex flex-col select-none left-0 z-50"
       >
         <NavItem text="Home" symbolText="home" link="home" />
-        <NavItem text="Products" symbolText="deployed_code" link="product" />
+        <NavItem text="Products" symbolText="deployed_code" link="products" />
         <NavItem text="Sell" symbolText="sell" />
         <NavItem text="Buy" symbolText="shopping_cart" />
         <NavItem text="Search" symbolText="search" />
@@ -50,3 +44,18 @@ const NavMenu = () => {
 };
 
 export default NavMenu;
+
+const Menu = (props) => {
+  return (
+    <div
+      ref={props.hamburgerMenu}
+      id="menu"
+      className="w-10 h-5 flex items-center justify-between flex-col"
+      onClick={props.handleClickOnMenu}
+    >
+      <div className="menuLine bg-pink-400 w-full h-0.5 rounded-full pointer-events-none select-none transition-transform"></div>
+      <div className="menuLine bg-slate-50 w-full h-0.5 rounded-full pointer-events-none select-none transition-transform"></div>
+      <div className="menuLine bg-slate-50 w-full h-0.5 rounded-full pointer-events-none select-none transition-transform"></div>
+    </div>
+  );
+};

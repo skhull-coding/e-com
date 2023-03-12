@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Cursor from "./components/Cursor";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
+import Products from "./pages/Products";
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
         <Footer />
       </Router>
