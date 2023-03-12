@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Phones",
+    "color": "#000",
+    "bgColor" : "#C9EEFF"
+  },
+  {
+    "name": "Cycles",
+    "color": "#000",
+    "bgColor" : "#C9EEFF"
+  },
+  {
+    "name": "Books",
+    "color": "#000",
+    "bgColor" : "#C9EEFF"
+  }
+]

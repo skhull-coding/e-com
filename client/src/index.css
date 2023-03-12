@@ -19,4 +19,25 @@
   #navbar {
     @apply overflow-x-visible !important;
   }
+
+  #first-page::before {
+    background: url('./bgs/bg2.png') no-repeat center center/cover;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
